@@ -8,4 +8,14 @@ touch README.md
 git add README.md assignment_1_essay.md 
 git commit -m Add assignment 1 essay file placeholder 
 git push
+mkdir -p data/raw
+mkdir -p data/clean
+mkdir docs
+mkdir logs
+touch data/raw/example.txt
+touch data/clean/example.txt
+touch docs/example.txt
+touch logs/logfile.log
+git add .
+git commit -m "Add placeholders"
 
