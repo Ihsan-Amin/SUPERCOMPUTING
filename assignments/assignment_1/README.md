@@ -18,4 +18,4 @@ touch docs/example.txt
 touch logs/logfile.log
 git add .
 git commit -m "Add placeholders"
-
+git push
