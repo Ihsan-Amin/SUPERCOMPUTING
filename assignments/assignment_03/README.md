@@ -1,31 +1,32 @@
-Ihsan Amin Assignment 3 2.18.26
-bora
-password
-cd SUPERCOMPUTING
-git pull
-cd assignments
-cd assignment_03
-mkdir -p data
-cd data
-wget https://gzahn.github.io/data/GCF_000001735.4_TAIR10.1_genomic.fna.gz
-gunzip GCF_000001735.4_TAIR10.1_genomic.fna.gz
-DATA="GCF_000001735.4_TAIR10.1_genomic.fna"
-grep -c ">" $DATA
-grep -v "^>" $DATA|tr -d '\n' | wc -c
-wc -l $DATA
-grep "mitochondrion" $DATA | grep "^>" | wc -l
-grep "chromosome" "$DATA" | grep "^>" | wc -l
-grep -n "^>.*chromosome 1" "$DATA" | head -n 1
-grep -n "^>.*chromosome 2" "$DATA" | head -n 1
-grep -n "^>.*chromosome 3" "$DATA" | head -n 1
-grep -n "^>.*chromosome 4" "$DATA" | head -n 1
-head -n 2 "$DATA" | tail -n 1 | wc -c
-head -n 4 "$DATA" | tail -n 1 | wc -c
-head -n 6 "$DATA" | tail -n 1 | wc -c
-head -n 10 "$DATA" | tail -n 1 | wc -c
-paste <(grep "^>" "$DATA") <(grep -v "^>" "$DATA") | grep "AAAAAAAAAAAAAAA" | wc -l
-grep "^>" $DATA | sort | head -n 1
-paste <(grep "^>" "$DATA") <(grep -v "^>" "$DATA") > GCF_000001735.4_TAIR10.1_genomic.fna.tsv
+Ihsan Amin Assignment 3 2.18.26 
+bora 
+password 
+cd SUPERCOMPUTING 
+git pull 
+cd assignments 
+cd assignment_03 
+mkdir -p data 
+cd data 
+wget https://gzahn.github.io/data/GCF_000001735.4_TAIR10.1_genomic.fna.gz 
+gunzip GCF_000001735.4_TAIR10.1_genomic.fna.gz 
+DATA="GCF_000001735.4_TAIR10.1_genomic.fna" 
+grep -c ">" $DATA 
+grep -v "^>" $DATA|tr -d '\n' | wc -c 
+wc -l $DATA 
+grep "mitochondrion" $DATA | grep "^>" | wc -l 
+grep "chromosome" "$DATA" | grep "^>" | wc -l 
+grep -n "^>.*chromosome 1" "$DATA" | head -n 1 
+grep -n "^>.*chromosome 2" "$DATA" | head -n 1 
+grep -n "^>.*chromosome 3" "$DATA" | head -n 1 
+grep -n "^>.*chromosome 4" "$DATA" | head -n 1 
+head -n 2 "$DATA" | tail -n 1 | wc -c 
+head -n 4 "$DATA" | tail -n 1 | wc -c 
+head -n 6 "$DATA" | tail -n 1 | wc -c 
+head -n 10 "$DATA" | tail -n 1 | wc -c 
+paste <(grep "^>" "$DATA") <(grep -v "^>" "$DATA") | grep "AAAAAAAAAAAAAAA" | wc -l 
+grep "^>" $DATA | sort | head -n 1 
+paste <(grep "^>" "$DATA") <(grep -v "^>" "$DATA") > GCF_000001735.4_TAIR10.1_genomic.fna.tsv 
+
 
 REFLECTION:
 
