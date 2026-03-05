@@ -1,0 +1,5 @@
+data/raw/
+data/trimmed/
+*.fastq.gz
+*.fastq
+*.tar
