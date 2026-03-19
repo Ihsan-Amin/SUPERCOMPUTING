@@ -240,7 +240,7 @@ bash pipeline.sh
 
 ### Task 10 — Reflection
 
-- The issues I  came accross on this assignment were fairly easy to debug, mainly writing scripts that had to have changes for re-runs. git clone and mamba create both created duplicates so i had to add remove statements before for the pipeline. It was annoying going back and fixing them, but it made me more concious of how I write scripts, i've started using -rf to avoid errors on the off chance files may/may not exist when running a pipeline. 
+- The issues I  came accross on this assignment were fairly easy to debug, mainly writing scripts that had to have changes for re-runs. git clone and mamba create both created duplicates so i had to add remove statements before for the pipeline. It was annoying going back and fixing them, but it made me more concious of how I write scripts, i've started using -rf to avoid errors on the off chance files may/may not exist when running a pipeline. I also had to use -y because the pipeline would require input w/ the conda reset.  
 - Vs the lesson, we used mamba here. I learned that mamba resolves dependencies faster than conda, but fundementally does the same things (installing packages). I googled some differences and it looks like mamba uses c++ vs conda's python. 
 - I also learned that conda is still required when using mamba, because (googled) mamba cant do shell level commands like activate and deactivating the environment.  
 - All 3 of the approaches in this assignment returned the correct results. While I liked the simplicity of the hpc module, I think the conda approach that generated the YML would be easier to replicate on other devices.
