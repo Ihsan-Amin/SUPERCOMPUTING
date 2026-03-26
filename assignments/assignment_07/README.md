@@ -1,4 +1,10 @@
 # Assignment 7
+# Ihsan Amin
+
+# The goal of this assignment was to download 10  metagenomic dataset to identify dog DNA matches in shotgun sequencing reads. 
+# pipeline (sbatch assignment_7_pipeline.slurm) runs scripts 1-3, downloading sequence data, cleaning reads, mapping reads to the Canis familiaris reference genome. Scripts are located in the script directory. Data is organized in the data directory and seperated into cleaned, reference dog genome, and raw genome data. An sraruntable.csv is in the base data folder and used as a reference for script 1 to download data from SRA
+# run pipeline via SLURM, sbatch assignment_7_pipeline.slurm in a7 directory
+
 
 ## SRR_Acc_List.txt
 
@@ -233,4 +239,6 @@ bash scripts/04_count_reads.sh > task8_table.md
 ```
 
 ## Task 9 Reflection
+
+This task was interesting to bring together but i ultimately got stuck on downloading and unzipping the data. I likely selected genome data that was too large or came accross a bottleneck with the slurm process. I'll spend time reviewing what i did wrong over the week. I do feel more confident accessing SLURM and checking in on tasks. 
 
