@@ -1,0 +1,10 @@
+spots read      : 19,338,841
+reads read      : 38,431,665
+reads written   : 38,431,665
+spots read      : 21,575,585
+reads read      : 42,903,942
+reads written   : 42,903,942
+spots read      : 22,797,241
+reads read      : 45,322,400
+reads written   : 45,322,400
+slurmstepd: error: *** JOB 286971 ON hi02 CANCELLED AT 2026-03-26T05:01:32 ***
